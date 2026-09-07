@@ -15,7 +15,8 @@ import {
   Cell,
 } from "recharts";
 import { useDropzone } from "react-dropzone";
-import ThemeToggle from "@/components/ThemeToggle";
+// import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "../components/ThemeToggle";
 
 // ========== TYPES ==========
 type ExtractedTest = {
