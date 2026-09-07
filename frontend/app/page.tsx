@@ -149,7 +149,7 @@ export default function Home() {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await fetch(`${API_BASE}/ocr/extract`, { method: "POST", body: formData });
+      const res = await fetch("https://sehat-iw9z1j1d0-da-ni1.vercel.app/", { method: "POST", body: formData });
       if (!res.ok) throw new Error(`Upload failed (${res.status})`);
       const data = await res.json();
       const entries = data.extracted_tests || [];
@@ -176,7 +176,7 @@ export default function Home() {
           normal_range: e.normal_range || "",
         }));
 
-      const res = await fetch(`${API_BASE}/analyze`, {
+      const res = await fetch("https://sehat-iw9z1j1d0-da-ni1.vercel.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
