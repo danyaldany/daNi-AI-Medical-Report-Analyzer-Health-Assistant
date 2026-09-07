@@ -20,20 +20,19 @@ from app.vision_extract import extract_tests_with_vision
 app = FastAPI(title="AI Medical Report Analyzer API")
 
 origins = [
-    "https://sehat-iw9z1j1d0-da-ni1.vercel.app",  # Aapka Vercel deployment URL
+    "https://sehat-iw9z1j1d0-da-ni1.vercel.app",
     "https://sehatsamjomedical.vercel.app",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
 
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"https://.*\.vercel\.app|http://(localhost|127\.0\.0\.1):\d+",
-    allow_origins=["*"],            # Allow all origins to prevent any Vercel domain mismatches
-    allow_credentials=False,        # Must be False when using wildcard "*"
-    allow_methods=["*"],            # Allows GET, POST, OPTIONS, PUT, DELETE
-    allow_headers=["*"],            # Allows all headers (Authorization, Content-Type, etc.)
+    allow_origins=origins,              # Explicitly allow your origins
+    allow_origin_regex=r"https://.*\.vercel\.app",  # Fallback for dynamic Vercel preview deployments
+    allow_credentials=True,             # Set to True for standard cross-origin headers
+    allow_methods=["*"],                # Allows GET, POST, OPTIONS, etc.
+    allow_headers=["*"],                # Allows all headers
 )
 
 @app.get("/")
