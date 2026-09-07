@@ -30,7 +30,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
     allow_origins=[
-        "https://your-project.vercel.app",  # ← Apni Vercel URL daalein
+        "https://sehatsamjomedical.vercel.app",  # ← Apni Vercel URL daalein
         "http://localhost:3000"
     ],
 )
