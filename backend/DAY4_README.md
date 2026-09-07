@@ -1,24 +1,36 @@
+
+---
+
+## 📄 File 4: `DAY4_Explanation_Generation.md`
+
+```markdown
 # Day 4 — Explanation Generation (Component 5)
 
 ## Kya bana
 
-1. **`backend/app/abnormal_check.py`** — Deterministic abnormal-value flagging (no LLM). Value ko reference range se compare karta hai. Gender-split ranges ke liye conservative combined-bound approach (gender collect nahi karte, isliye false-positive avoid karta hai). Multi-tier ranges (jaise HbA1c) ko "range_unclear" bolta hai — guess nahi karta. **Verified: 10/10 test cases pass.**
+1. **`backend/app/abnormal_check.py`** — Deterministic abnormal-value flagging.
+   - `check_abnormal()` — numeric ranges (e.g., "13.5-17.5")
+   - `check_qualitative()` — Positive/Negative tests (HIV, HBsAg, etc.)
+   - Gender-split ranges handle hoti hain (combined bound)
+   - Multi-tier ranges (HbA1c) → "range_unclear" — guess nahi karta
 
-2. **`backend/app/doctor_questions.py`** — "Doctor se kya poochein" suggestions, category + abnormal-status based templates. **Yeh LLM se nahi bana** — jaan-bujh kar, wajah neeche.
+2. **`backend/app/doctor_questions.py`** — "Doctor se kya poochein" suggestions. Category + abnormal-status based templates. **LLM se nahi bana** — deterministic.
 
-3. **`backend/app/knowledge.py`** — dono upar wale modules wire hue, `/analyze` ab abnormal status aur doctor questions bhi return karta hai.
+3. **`backend/app/llm_generation.py`** — LLM explanation enhancement.
+   - **Gemini Flash** primary (contextual 4-5 sentence explanations)
+   - **Static fallback** if LLM unavailable or fails
+   - Bilingual output (English + Urdu)
+   - Strict safety rules — no diagnosis, always "may indicate"
 
-4. **Frontend** — abnormal status badge (green/red/amber) aur doctor questions display hote hain results mein.
+4. **`backend/app/knowledge.py`** — Integrated abnormal status, doctor questions, aur LLM explanation.
 
-5. **Safety check verified:** Sab 24 explanations ko scan kiya — koi diagnostic-claim language nahi mili (Safety Scenario #4 ✅).
+5. **Frontend** — Abnormal status badge (green/red/amber) aur doctor questions display.
 
-## Important design decision — LLM generation abhi nahi
+## Safety Check
 
-Locked tech stack (Step 5) mein LLM (Ollama/Alibaba Model Studio) explanation generation ke liye planned tha. Maine **abhi isko skip kiya** — explanation generation abhi bhi static/retrieval-based hai (Day 1 se), naya sirf abnormal-flagging aur doctor-questions hai, dono deterministic.
-
-**Wajah:** Step 7 ka locked priority — safety + reliable demo > feature breadth — aur aaj OCR credentials/CORS debugging mein jitna time gaya, wahi dikhata hai ke naye external dependencies (LLM call) is stage pe naye failure points la sakte hain. Agar Day 5-6 mein time bache, LLM generation ek **enhancement** ke taur pe add ho sakti hai (static explanation ko personalize karne ke liye), lekin fallback hamesha yeh working static system rahega.
-
-**Aapki call hai** — agar aap LLM generation zaroor chahte ho (kyunke yeh original tech stack commitment tha aur form submission mein bhi likha hai), batao, main Ollama integration bana deta hoon. Lekin recommend yeh hai ke pehle poora pipeline safety-test kar lein (Day 7 ka kaam), phir agar time bache to LLM add karein.
+- **24+ explanations scanned** — koi diagnostic-claim language nahi mili
+- **Qualitative tests** — "Negative" → Normal, "Positive" → Abnormal
+- **Static fallback** — always available, never breaks
 
 ## Kaise test karo (aapke machine pe)
 
@@ -26,30 +38,15 @@ Locked tech stack (Step 5) mein LLM (Ollama/Alibaba Model Studio) explanation ge
 cd backend
 python scripts/build_knowledge_base.py  # agar pehle se nahi bana
 uvicorn app.main:app --reload
-```
 
-`/docs` se `/analyze` try karo:
-```json
+/docs se /analyze try karo:
+
+json
 {
   "tests": [
-    {"test_name": "Hemoglobin", "value": "11.2"},
-    {"test_name": "Creatinine", "value": "1.8"}
+    {"test_name": "Hemoglobin", "value": "10.6"},
+    {"test_name": "HIV", "value": "Negative"},
+    {"test_name": "Creatinine", "value": "0.8"}
   ],
-  "medicines": []
+  "medicines": ["Panadol"]
 }
-```
-
-Ab response mein `abnormal_status` aur `doctor_questions` bhi aane chahiye.
-
-## Day 4 Checkpoint — Status
-
-- [x] Abnormal-value flagging (verified, 10/10 tests)
-- [x] Doctor-question suggestions (templated)
-- [x] Safety filter check (24/24 explanations clean)
-- [x] Frontend updated + build verified
-- [ ] LLM-based generation — deliberately deferred, aapki decision chahiye
-- [ ] Aapke machine pe end-to-end verify karna hai
-
-## Agla step — Day 5
-
-Medicine lookup ko bhi frontend mein wire karna, aur poora backend-frontend integration finalize karna.
