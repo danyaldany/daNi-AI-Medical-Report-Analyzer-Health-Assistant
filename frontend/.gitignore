@@ -1,0 +1,46 @@
+# ===== BACKEND (Python) =====
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# ===== ENVIRONMENT VARIABLES (CRITICAL) =====
+.env
+.env.local
+.env.*.local
+*.env
+
+# ===== FRONTEND (Next.js / Node) =====
+node_modules/
+.next/
+out/
+build/
+dist/
+.npm
+*.tsbuildinfo
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ===== ChromaDB (Can be rebuilt) =====
+backend/data/chroma_store/
+
+# ===== Misc =====
+*.db
+*.sqlite3
+coverage/
+.nyc_output/

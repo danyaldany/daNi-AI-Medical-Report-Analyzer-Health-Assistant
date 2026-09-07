@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+chromadb
+sentence-transformers
+python-multipart
+pydantic
+python-dotenv
+alibabacloud_ocr_api20210707
+alibabacloud_tea_openapi
+alibabacloud_tea_util
+pytesseract
+Pillow
+openai

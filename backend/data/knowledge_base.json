@@ -1,0 +1,540 @@
+[
+  {
+    "id": "hemoglobin",
+    "test_name": "Hemoglobin (Hb)",
+    "category": "CBC",
+    "unit": "g/dL",
+    "reference_range": "13.5-17.5 (male), 12.0-15.5 (female)",
+    "aliases": ["Haemoglobin", "Hb"],
+    "explanation_en": "Hemoglobin is the protein in red blood cells that carries oxygen around the body. A value below the reference range can be associated with anemia and may cause fatigue or weakness. A value above the range is less common and can have several causes.",
+    "explanation_ur": "ہیموگلوبن سرخ خون کے خلیوں میں موجود وہ پروٹین ہے جو جسم میں آکسیجن پہنچاتا ہے۔ اگر یہ ریفرنس رینج سے کم ہو تو یہ خون کی کمی (انیمیا) سے جڑا ہو سکتا ہے اور کمزوری یا تھکاوٹ کا باعث بن سکتا ہے۔ زیادہ ہونا کم عام ہے اور اس کی کئی وجوہات ہو سکتی ہیں۔"
+  },
+  {
+    "id": "wbc_count",
+    "test_name": "White Blood Cell Count (WBC)",
+    "category": "CBC",
+    "unit": "cells/mcL",
+    "reference_range": "4,500-11,000",
+    "explanation_en": "White blood cells help the body fight infection. A high count can indicate the body is responding to an infection or inflammation. A low count can mean the immune system's defenses are reduced.",
+    "explanation_ur": "سفید خون کے خلیے جسم کو انفیکشن سے لڑنے میں مدد دیتے ہیں۔ زیادہ مقدار یہ ظاہر کر سکتی ہے کہ جسم کسی انفیکشن یا سوزش کا سامنا کر رہا ہے۔ کم مقدار کا مطلب ہو سکتا ہے کہ جسم کا مدافعتی نظام کمزور ہے۔"
+  },
+  {
+    "id": "platelet_count",
+    "test_name": "Platelet Count",
+    "category": "CBC",
+    "unit": "/mcL",
+    "reference_range": "150,000-450,000",
+    "aliases": ["Platelet", "Platelets"],
+    "explanation_en": "Platelets help the blood clot. A low count may increase the risk of bruising or bleeding. A high count is less common and can have several causes.",
+    "explanation_ur": "پلیٹلیٹس خون کو جمنے میں مدد دیتے ہیں۔ کم مقدار سے نیل پڑنے یا خون بہنے کا خطرہ بڑھ سکتا ہے۔ زیادہ مقدار کم عام ہے اور اس کی مختلف وجوہات ہو سکتی ہیں۔"
+  },
+  {
+    "id": "rbc_count",
+    "test_name": "Red Blood Cell Count (RBC)",
+    "category": "CBC",
+    "unit": "million/mcL",
+    "reference_range": "4.7-6.1 (male), 4.2-5.4 (female)",
+    "explanation_en": "Red blood cells carry oxygen from the lungs to the rest of the body. A low count is often associated with anemia; a high count can have several causes including dehydration.",
+    "explanation_ur": "سرخ خون کے خلیے پھیپھڑوں سے آکسیجن جسم کے باقی حصوں تک پہنچاتے ہیں۔ کم مقدار اکثر خون کی کمی سے جڑی ہوتی ہے، جبکہ زیادہ مقدار کی کئی وجوہات ہو سکتی ہیں جن میں پانی کی کمی بھی شامل ہے۔"
+  },
+  {
+    "id": "hematocrit",
+    "test_name": "Hematocrit (HCT)",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "M: 40-52, F: 36-48",
+    "explanation_en": "Hematocrit measures the proportion of blood made up of red blood cells. Low values often relate to anemia; high values can relate to dehydration or other causes.",
+    "explanation_ur": "ہیماٹوکرٹ خون میں سرخ خلیوں کے تناسب کو ناپتا ہے۔ کم مقدار اکثر خون کی کمی سے متعلق ہوتی ہے، جبکہ زیادہ مقدار پانی کی کمی یا دیگر وجوہات سے ہو سکتی ہے۔"
+  },
+  {
+    "id": "mcv",
+    "test_name": "Mean Corpuscular Volume (MCV)",
+    "category": "CBC",
+    "unit": "fL",
+    "reference_range": "80-100",
+    "explanation_en": "MCV measures the average size of red blood cells. This helps identify the type of anemia if hemoglobin is low, or can be raised for other reasons.",
+    "explanation_ur": "ایم سی وی سرخ خون کے خلیوں کے اوسط سائز کو ناپتا ہے۔ اگر ہیموگلوبن کم ہو تو یہ خون کی کمی کی قسم پہچاننے میں مدد دیتا ہے، یا دیگر وجوہات سے زیادہ بھی ہو سکتا ہے۔"
+  },
+  {
+    "id": "rdw",
+    "test_name": "Red Cell Distribution Width (RDW)",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "11.5-14.5",
+    "aliases": ["Red Cell Distribution Width", "RDW", "RDW-CV"],
+    "explanation_en": "RDW measures the variation in the size of red blood cells. Abnormal values may help provide context when evaluating different types of anemia.",
+    "explanation_ur": "آر ڈی ڈبلیو سرخ خون کے خلیوں کے سائز میں فرق کی پیمائش کرتا ہے۔ غیر معمولی مقدار خون کی کمی کی مختلف اقسام کا جائزہ لیتے وقت مدد دے سکتی ہے۔"
+  },
+  {
+    "id": "eosinophils",
+    "test_name": "Eosinophils",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "1-6",
+    "aliases": ["Eosinophils", "Eosinophil", "EO"],
+    "explanation_en": "Eosinophils are white blood cells involved in immune responses. Changes in their level may be associated with allergies, infections, or other inflammatory responses.",
+    "explanation_ur": "ایوزینوفِلز سفید خون کے خلیے ہیں جو مدافعتی ردعمل میں شامل ہوتے ہیں۔ ان کی مقدار میں تبدیلی الرجی، انفیکشن یا دیگر سوزشی ردعمل سے متعلق ہو سکتی ہے۔"
+  },
+  {
+    "id": "monocytes",
+    "test_name": "Monocytes",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "2-10",
+    "aliases": ["Monocytes", "Monocyte", "MO"],
+    "explanation_en": "Monocytes are white blood cells that help remove germs and damaged cells. Changes in their level may occur with infections or inflammation and should be interpreted with other results.",
+    "explanation_ur": "مونو سائٹس سفید خون کے خلیے ہیں جو جراثیم اور خراب خلیوں کو دور کرنے میں مدد دیتے ہیں۔ ان کی مقدار میں تبدیلی انفیکشن یا سوزش کے ساتھ ہو سکتی ہے اور اسے دیگر نتائج کے ساتھ سمجھنا چاہیے۔"
+  },
+  {
+    "id": "mch",
+    "test_name": "Mean Corpuscular Hemoglobin (MCH)",
+    "category": "CBC",
+    "unit": "pg",
+    "reference_range": "27-33",
+    "aliases": ["MCH"],
+    "explanation_en": "MCH measures the average amount of hemoglobin in a red blood cell. Low or high values can help identify different types of anemia.",
+    "explanation_ur": "ایم سی ایچ سرخ خون کے خلیے میں ہیموگلوبن کی اوسط مقدار ناپتا ہے۔ کم یا زیادہ مقدار خون کی کمی کی مختلف اقسام کی شناخت میں مدد دے سکتی ہے۔"
+  },
+  {
+    "id": "mchc",
+    "test_name": "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+    "category": "CBC",
+    "unit": "g/dL",
+    "reference_range": "32-36",
+    "aliases": ["MCHC"],
+    "explanation_en": "MCHC measures the average concentration of hemoglobin inside red blood cells. Abnormal values may help identify anemia or other blood conditions.",
+    "explanation_ur": "ایم سی ایچ سی سرخ خون کے خلیوں کے اندر ہیموگلوبن کی اوسط ارتکاز ناپتا ہے۔ غیر معمولی مقدار خون کی کمی یا خون کی دیگر حالتوں کی شناخت میں مدد دے سکتی ہے۔"
+  },
+  {
+    "id": "neutrophils_anc",
+    "test_name": "Neutrophils (ANC)",
+    "category": "CBC",
+    "unit": "cells/mcL",
+    "reference_range": "1,500-8,000",
+    "aliases": ["Neutrophils", "ANC"],
+    "explanation_en": "The absolute neutrophil count measures infection-fighting white blood cells. Low levels can increase infection risk, while high levels may occur with infection or inflammation.",
+    "explanation_ur": "مطلق نیوٹروفِل شمار انفیکشن سے لڑنے والے سفید خون کے خلیوں کی پیمائش کرتا ہے۔ کم مقدار سے انفیکشن کا خطرہ بڑھ سکتا ہے، جبکہ زیادہ مقدار انفیکشن یا سوزش کے ساتھ ہو سکتی ہے۔"
+  },
+  {
+    "id": "lymphocytes",
+    "test_name": "Lymphocytes",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "20-45",
+    "aliases": ["Lymphocytes"],
+    "explanation_en": "Lymphocytes are white blood cells that help coordinate immune responses and recognize infections. Changes in their level should be interpreted with the rest of the blood count.",
+    "explanation_ur": "لیمفوسائٹس سفید خون کے خلیے ہیں جو مدافعتی ردعمل کو منظم کرنے اور انفیکشن کی شناخت میں مدد دیتے ہیں۔ ان کی مقدار میں تبدیلی کو خون کے باقی شمار کے ساتھ سمجھنا چاہیے۔"
+  },
+  {
+    "id": "basophils",
+    "test_name": "Basophils",
+    "category": "CBC",
+    "unit": "%",
+    "reference_range": "0-1",
+    "aliases": ["Basophils"],
+    "explanation_en": "Basophils are white blood cells involved in immune and allergic responses. Changes in their level should be interpreted with other blood count results.",
+    "explanation_ur": "بیزوفِلز سفید خون کے خلیے ہیں جو مدافعتی اور الرجی کے ردعمل میں شامل ہوتے ہیں۔ ان کی مقدار میں تبدیلی کو خون کے دیگر شمار کے نتائج کے ساتھ سمجھنا چاہیے۔"
+  },
+  {
+    "id": "mpv",
+    "test_name": "Mean Platelet Volume (MPV)",
+    "category": "CBC",
+    "unit": "fL",
+    "reference_range": "7.5-11.5",
+    "aliases": ["Mean Platelet Volume", "MPV"],
+    "explanation_en": "Mean platelet volume measures the average size of platelets. It is interpreted alongside the platelet count to provide context about platelet production and turnover.",
+    "explanation_ur": "میین پلیٹلیٹ والیوم پلیٹلیٹس کے اوسط سائز کی پیمائش کرتا ہے۔ پلیٹلیٹ کی پیداوار اور تبدیلی کے بارے میں سیاق دینے کے لیے اسے پلیٹلیٹ کاؤنٹ کے ساتھ سمجھا جاتا ہے۔"
+  },
+  {
+    "id": "fasting_blood_sugar",
+    "test_name": "Fasting Blood Sugar (FBS)",
+    "category": "Blood Sugar",
+    "unit": "mg/dL",
+    "reference_range": "70-100",
+    "explanation_en": "This measures blood sugar after fasting (usually 8+ hours). Values above range may indicate prediabetes or diabetes and should be discussed with a doctor. Values below range may indicate hypoglycemia.",
+    "explanation_ur": "یہ فاسٹنگ (عام طور پر 8 گھنٹے یا زیادہ بھوکا رہنے) کے بعد خون میں شوگر کی مقدار ناپتا ہے۔ رینج سے زیادہ مقدار پری ذیابیطس یا ذیابیطس کی نشاندہی کر سکتی ہے اور اس پر ڈاکٹر سے بات کی جانی چاہیے۔ کم مقدار ہائپوگلائسیمیا کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "random_blood_sugar",
+    "test_name": "Random Blood Sugar (RBS)",
+    "category": "Blood Sugar",
+    "unit": "mg/dL",
+    "reference_range": "under 140",
+    "explanation_en": "This measures blood sugar at any time of day, without fasting. Consistently high values should be discussed with a doctor, especially alongside other diabetes-related tests.",
+    "explanation_ur": "یہ دن کے کسی بھی وقت، بغیر فاسٹنگ کے، خون میں شوگر کی مقدار ناپتا ہے۔ مسلسل زیادہ مقدار پر ڈاکٹر سے بات کی جانی چاہیے، خاص طور پر دیگر ذیابیطس سے متعلق ٹیسٹس کے ساتھ۔"
+  },
+  {
+    "id": "hba1c",
+    "test_name": "HbA1c",
+    "category": "Blood Sugar",
+    "unit": "%",
+    "reference_range": "under 5.7 (normal), 5.7-6.4 (prediabetes), 6.5+ (diabetes range)",
+    "explanation_en": "HbA1c reflects average blood sugar over the past 2-3 months. It is commonly used to monitor or screen for diabetes and should be interpreted with a doctor.",
+    "explanation_ur": "ایچ بی اے ون سی پچھلے 2-3 مہینوں کی اوسط بلڈ شوگر کو ظاہر کرتا ہے۔ یہ عام طور پر ذیابیطس کی نگرانی یا اسکریننگ کے لیے استعمال ہوتا ہے اور اس کی تشریح ڈاکٹر کے ساتھ کی جانی چاہیے۔"
+  },
+  {
+    "id": "total_cholesterol",
+    "test_name": "Total Cholesterol",
+    "category": "Lipid Profile",
+    "unit": "mg/dL",
+    "reference_range": "under 200 (desirable)",
+    "explanation_en": "This is the total amount of cholesterol in the blood. Higher values, especially over time, are associated with increased cardiovascular risk and are best discussed with a doctor.",
+    "explanation_ur": "یہ خون میں موجود کولیسٹرول کی کل مقدار ہے۔ زیادہ مقدار، خاص طور پر طویل عرصے تک، دل کی بیماریوں کے بڑھتے خطرے سے جڑی ہوتی ہے اور اس پر ڈاکٹر سے بات کرنا بہتر ہے۔"
+  },
+  {
+    "id": "ldl_cholesterol",
+    "test_name": "LDL Cholesterol",
+    "category": "Lipid Profile",
+    "unit": "mg/dL",
+    "reference_range": "under 100 (optimal)",
+    "explanation_en": "LDL is often called 'bad' cholesterol because higher levels are linked to plaque buildup in arteries. Elevated values are usually discussed alongside overall cardiovascular risk.",
+    "explanation_ur": "ایل ڈی ایل کو اکثر 'برا' کولیسٹرول کہا جاتا ہے کیونکہ اس کی زیادہ مقدار شریانوں میں چکنائی جمع ہونے سے جڑی ہوتی ہے۔ زیادہ مقدار پر عموماً مجموعی دل کے خطرے کے ساتھ بات کی جاتی ہے۔"
+  },
+  {
+    "id": "hdl_cholesterol",
+    "test_name": "HDL Cholesterol",
+    "category": "Lipid Profile",
+    "unit": "mg/dL",
+    "reference_range": "over 40 (male), over 50 (female)",
+    "explanation_en": "HDL is often called 'good' cholesterol because it helps remove other forms of cholesterol from the blood. Lower-than-range values may be worth discussing with a doctor.",
+    "explanation_ur": "ایچ ڈی ایل کو اکثر 'اچھا' کولیسٹرول کہا جاتا ہے کیونکہ یہ خون سے دیگر اقسام کے کولیسٹرول کو نکالنے میں مدد دیتا ہے۔ رینج سے کم مقدار پر ڈاکٹر سے بات کی جا سکتی ہے۔"
+  },
+  {
+    "id": "triglycerides",
+    "test_name": "Triglycerides",
+    "category": "Lipid Profile",
+    "unit": "mg/dL",
+    "reference_range": "under 150",
+    "explanation_en": "Triglycerides are a type of fat in the blood. Elevated levels are associated with cardiovascular risk and are often linked to diet, weight, or other factors.",
+    "explanation_ur": "ٹرائی گلیسرائیڈز خون میں چکنائی کی ایک قسم ہیں۔ زیادہ مقدار دل کی بیماریوں کے خطرے سے جڑی ہوتی ہے اور اکثر خوراک، وزن یا دیگر عوامل سے متعلق ہوتی ہے۔"
+  },
+  {
+    "id": "alt_sgpt",
+    "test_name": "ALT (SGPT)",
+    "category": "Liver Function",
+    "unit": "U/L",
+    "reference_range": "7-56",
+    "explanation_en": "ALT is an enzyme found mainly in the liver. Elevated levels can indicate liver stress or damage and are usually followed up with additional tests.",
+    "explanation_ur": "اے ایل ٹی ایک انزائم ہے جو زیادہ تر جگر میں پایا جاتا ہے۔ زیادہ مقدار جگر پر دباؤ یا نقصان کی نشاندہی کر سکتی ہے اور عام طور پر مزید ٹیسٹس کے ذریعے پیروی کی جاتی ہے۔"
+  },
+  {
+    "id": "ast_sgot",
+    "test_name": "AST (SGOT)",
+    "category": "Liver Function",
+    "unit": "U/L",
+    "reference_range": "10-40",
+    "explanation_en": "AST is an enzyme found in the liver and other tissues. Elevated levels can relate to liver stress but are not specific to the liver alone.",
+    "explanation_ur": "اے ایس ٹی ایک انزائم ہے جو جگر اور دیگر بافتوں میں پایا جاتا ہے۔ زیادہ مقدار جگر پر دباؤ سے متعلق ہو سکتی ہے لیکن یہ صرف جگر کے لیے مخصوص نہیں۔"
+  },
+  {
+    "id": "bilirubin_total",
+    "test_name": "Bilirubin (Total)",
+    "category": "Liver Function",
+    "unit": "mg/dL",
+    "aliases": ["S. Bilirubin", "S.Bilirubin", "Serum Bilirubin"],
+    "reference_range": "0.1-1.2",
+    "explanation_en": "Bilirubin is a byproduct of the breakdown of red blood cells, processed by the liver. Elevated levels can cause jaundice and may indicate a liver or bile-related issue.",
+    "explanation_ur": "بلیروبن سرخ خون کے خلیوں کے ٹوٹنے کی ایک پیداوار ہے جسے جگر پروسیس کرتا ہے۔ زیادہ مقدار یرقان کا باعث بن سکتی ہے اور جگر یا صفراوی نظام سے متعلق مسئلے کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "alp",
+    "test_name": "Alkaline Phosphatase (ALP)",
+    "category": "Liver Function",
+    "unit": "U/L",
+    "reference_range": "44-147",
+    "explanation_en": "ALP is an enzyme found in the liver and bones. Elevated levels can relate to liver, bile duct, or bone conditions and are usually interpreted alongside other tests.",
+    "explanation_ur": "اے ایل پی ایک انزائم ہے جو جگر اور ہڈیوں میں پایا جاتا ہے۔ زیادہ مقدار جگر، صفراوی نالی یا ہڈیوں سے متعلق حالات سے جڑی ہو سکتی ہے اور عام طور پر دیگر ٹیسٹس کے ساتھ اس کی تشریح کی جاتی ہے۔"
+  },
+  {
+    "id": "albumin",
+    "test_name": "Albumin",
+    "category": "Liver Function",
+    "unit": "g/dL",
+    "reference_range": "3.5-5.0",
+    "explanation_en": "Albumin is a protein made by the liver. Low levels can relate to liver or kidney conditions, malnutrition, or other causes.",
+    "explanation_ur": "البومن جگر کے ذریعے بنایا جانے والا پروٹین ہے۔ کم مقدار جگر یا گردوں سے متعلق حالات، غذائی کمی یا دیگر وجوہات سے جڑی ہو سکتی ہے۔"
+  },
+  {
+    "id": "creatinine",
+    "test_name": "Creatinine",
+    "category": "Kidney Function",
+    "unit": "mg/dL",
+    "reference_range": "0.7-1.3 (male), 0.6-1.1 (female)",
+    "aliases": ["S. Creatinine", "S.Creatinine", "S. Creatinie", "S.Creatinie", "Serum Creatinine"],
+    "explanation_en": "Creatinine is a waste product filtered by the kidneys. Elevated levels can indicate the kidneys are not filtering as effectively and are usually discussed alongside eGFR.",
+    "explanation_ur": "کریٹینین ایک فضلہ مادہ ہے جسے گردے فلٹر کرتے ہیں۔ زیادہ مقدار یہ ظاہر کر سکتی ہے کہ گردے پہلے جیسی مؤثر طریقے سے فلٹر نہیں کر رہے، اور عام طور پر eGFR کے ساتھ اس پر بات کی جاتی ہے۔"
+  },
+  {
+    "id": "bun",
+    "test_name": "Blood Urea Nitrogen (BUN)",
+    "category": "Kidney Function",
+    "unit": "mg/dL",
+    "reference_range": "7-20",
+    "explanation_en": "BUN measures a waste product related to protein breakdown, filtered by the kidneys. Elevated levels can relate to kidney function, hydration, or diet.",
+    "explanation_ur": "بی یو این پروٹین کے ٹوٹنے سے متعلق ایک فضلہ مادے کو ناپتا ہے جسے گردے فلٹر کرتے ہیں۔ زیادہ مقدار گردوں کی کارکردگی، پانی کی مقدار یا خوراک سے متعلق ہو سکتی ہے۔"
+  },
+  {
+    "id": "uric_acid",
+    "test_name": "Uric Acid",
+    "category": "Kidney Function",
+    "unit": "mg/dL",
+    "reference_range": "3.4-7.0 (male), 2.4-6.0 (female)",
+    "explanation_en": "Uric acid is a waste product from the breakdown of purines. Elevated levels are associated with gout and are also relevant to kidney health.",
+    "explanation_ur": "یورک ایسڈ پیورینز کے ٹوٹنے سے بننے والا فضلہ مادہ ہے۔ زیادہ مقدار گاؤٹ سے جڑی ہوتی ہے اور گردوں کی صحت سے بھی متعلق ہے۔"
+  },
+  {
+    "id": "egfr",
+    "test_name": "eGFR (Estimated Glomerular Filtration Rate)",
+    "category": "Kidney Function",
+    "unit": "mL/min/1.73m2",
+    "reference_range": "over 90 (normal)",
+    "explanation_en": "eGFR estimates how well the kidneys are filtering blood. Lower values may indicate reduced kidney function and are usually followed up by a doctor.",
+    "explanation_ur": "ای جی ایف آر یہ اندازہ لگاتا ہے کہ گردے خون کو کتنی اچھی طرح فلٹر کر رہے ہیں۔ کم مقدار گردوں کی کارکردگی میں کمی کی نشاندہی کر سکتی ہے اور عام طور پر ڈاکٹر اس کی پیروی کرتا ہے۔"
+  },
+  {
+    "id": "tsh",
+    "test_name": "TSH (Thyroid Stimulating Hormone)",
+    "category": "Thyroid",
+    "unit": "mIU/L",
+    "reference_range": "0.4-4.0",
+    "explanation_en": "TSH regulates thyroid hormone production. High levels can be associated with an underactive thyroid, while low levels can be associated with an overactive thyroid.",
+    "explanation_ur": "ٹی ایس ایچ تھائیرائیڈ ہارمون کی پیداوار کو منظم کرتا ہے۔ زیادہ مقدار کمزور تھائیرائیڈ (انڈر ایکٹو) سے جڑی ہو سکتی ہے، جبکہ کم مقدار زیادہ فعال تھائیرائیڈ سے جڑی ہو سکتی ہے۔"
+  },
+  {
+    "id": "vitamin_d",
+    "test_name": "Vitamin D",
+    "category": "Vitamins",
+    "unit": "ng/mL",
+    "reference_range": "20-50 (sufficient)",
+    "explanation_en": "Vitamin D supports bone health and immune function. Low levels are common and may warrant dietary changes or supplementation, best discussed with a doctor.",
+    "explanation_ur": "وٹامن ڈی ہڈیوں کی صحت اور مدافعتی نظام کے لیے اہم ہے۔ کم مقدار عام ہے اور خوراک میں تبدیلی یا سپلیمنٹ کی ضرورت ہو سکتی ہے، جس پر ڈاکٹر سے بات بہتر ہے۔"
+  }
+  ,
+  {
+    "id": "calcium",
+    "test_name": "S.Calcium (Serum Calcium)",
+    "category": "Bio-Chemistry",
+    "unit": "mg/dL",
+    "reference_range": "8.5-10.5",
+    "aliases": ["S.Calcium", "Calcium", "Serum Calcium"],
+    "explanation_en": "Serum calcium measures calcium levels in blood, essential for bone health, nerve function, and muscle contraction. Abnormal levels may indicate parathyroid disorders, kidney disease, or bone conditions.",
+    "explanation_ur": "سیرم کیلشیم خون میں کیلشیم کی سطح کی پیمائش کرتا ہے، جو ہڈیوں کی صحت، اعصابی افعال، اور پٹھوں کے سنکچن کے لیے ضروری ہے۔ غیر معمولی سطح پیراٹائیرائڈ عوارض، گردے کی بیماری، یا ہڈیوں کی حالات کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "total_protein",
+    "test_name": "T. Protein (Total Protein)",
+    "category": "Bio-Chemistry",
+    "unit": "g/dL",
+    "reference_range": "6.0-8.0",
+    "aliases": ["T. Protein", "Total Protein", "Serum Protein"],
+    "explanation_en": "Total protein measures the combined levels of albumin and globulin in blood. Low levels can indicate liver disease, kidney disease, or malnutrition. High levels may indicate inflammation or infection.",
+    "explanation_ur": "کل پروٹین خون میں البومن اور گلوبلین کی مجموعی سطح کی پیمائش کرتا ہے۔ کم سطح جگر کی بیماری، گردے کی بیماری، یا غذائی کمی کی نشاندہی کر سکتی ہے۔ زیادہ سطح سوزش یا انفیکشن کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "tcl",
+    "test_name": "T.C.L (Total Leukocyte Count)",
+    "category": "Hematology",
+    "unit": "cells/cumm",
+    "reference_range": "4,000-11,000",
+    "aliases": ["TCL ","T.C.L"],
+    "explanation_en": "Total Leukocyte Count measures the total number of white blood cells, which defend the body against infections. High levels indicate infection or inflammation, while low levels can indicate immune suppression.",
+    "explanation_ur": "ٹی سی ایل سفید خون کے خلیوں کی کل تعداد کی پیمائش کرتا ہے، جو انفیکشن سے لڑنے میں مدد دیتے ہیں۔ زیادہ سطح انفیکشن یا سوزش کی نشاندہی کرتی ہے، جبکہ کم سطح مدافعتی کمزوری کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "esr",
+    "test_name": "E.S.R (Erythrocyte Sedimentation Rate)",
+    "category": "Hematology",
+    "unit": "mm/hr",
+    "reference_range": "0-22 (male), 0-29 (female)",
+    "aliases": ["ESR", "Erythrocyte Sedimentation Rate"],
+    "explanation_en": "ESR measures how fast red blood cells settle at the bottom of a test tube. Higher rates indicate inflammation in the body, which can be caused by infections, autoimmune diseases, or cancer.",
+    "explanation_ur": "ای ایس آر خون کے سرخ خلیات کی رفتار کی پیمائش کرتا ہے۔ زیادہ شرح جسم میں سوزش کی نشاندہی کرتی ہے، جو انفیکشن، خودکار مدافعتی امراض، یا کینسر کی وجہ سے ہو سکتی ہے۔"
+  },
+  {
+    "id": "mp",
+    "test_name": "M.P (Malaria Parasite)",
+    "category": "Hematology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["MP", "Malaria", "Malaria Parasite"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Present", "Detected", "Plasmodium"],
+    "explanation_en": "Malaria Parasite test detects the presence of Plasmodium in blood. A negative result means no malaria infection. A positive result requires immediate antimalarial treatment.",
+    "explanation_ur": "ملیریا پرجیوی ٹیسٹ خون میں پلازموڈیم کی موجودگی کا پتہ لگاتا ہے۔ منفی نتیجہ کا مطلب ہے کوئی ملیریا انفیکشن نہیں۔ مثبت نتیجہ کے لیے فوری اینٹی ملیریا علاج کی ضرورت ہوتی ہے۔"
+  },
+  {
+    "id": "dcl",
+    "test_name": "D.C.L (Differential Leukocyte Count)",
+    "category": "Hematology",
+    "unit": "%",
+    "reference_range": "Neutrophils: 40-75, Lymphocytes: 20-45, Monocytes: 2-10, Eosinophils: 1-6, Basophils: 0-1",
+    "aliases": ["DCL", "Differential", "Differential Count"],
+    "explanation_en": "Differential Leukocyte Count measures the percentage of different white blood cell types. Changes in these percentages can indicate infections, allergies, immune disorders, or blood conditions.",
+    "explanation_ur": "ڈیفرینشل لیوکوسائٹ کاؤنٹ مختلف سفید خون کے خلیوں کی فیصد کی پیمائش کرتا ہے۔ ان فیصد میں تبدیلی انفیکشن، الرجی، مدافعتی عوارض، یا خون کی حالات کی نشاندہی کر سکتی ہے۔"
+  },
+  {
+    "id": "aso",
+    "test_name": "ASO Titer (Anti-Streptolysin O)",
+    "category": "Serology",
+    "unit": "IU/mL",
+    "reference_range": "< 200",
+    "aliases": ["ASO", "ASO Titer", "Anti-Streptolysin O"],
+    "explanation_en": "ASO titer detects antibodies against streptococcus bacteria. High levels indicate a recent streptococcal infection, which can lead to rheumatic fever or kidney inflammation.",
+    "explanation_ur": "اے ایس او ٹائٹر اسٹریپٹوکوکس بیکٹیریا کے خلاف اینٹی باڈیز کا پتہ لگاتا ہے۔ زیادہ سطح حالیہ اسٹریپٹوکوکل انفیکشن کی نشاندہی کرتی ہے، جو ریمیٹک بخار یا گردے کی سوزش کا سبب بن سکتی ہے۔"
+  },
+  {
+    "id": "raf",
+    "test_name": "RAF Factor (Rheumatoid Factor)",
+    "category": "Serology",
+    "unit": "IU/mL",
+    "reference_range": "< 20",
+    "aliases": ["RAF", "RF", "Rheumatoid Factor", "RAF Factor"],
+    "explanation_en": "Rheumatoid Factor is an autoantibody detected in blood. High levels are associated with rheumatoid arthritis, other autoimmune diseases, or chronic infections.",
+    "explanation_ur": "ریمیٹوائڈ فیکٹر خون میں پایا جانے والا ایک آٹو اینٹی باڈی ہے۔ زیادہ سطح ریمیٹوائڈ گٹھیا، دیگر خودکار مدافعتی امراض، یا دائمی انفیکشنز سے وابستہ ہے۔"
+  },
+  {
+    "id": "hbsag",
+    "test_name": "Hbs Ag (Hepatitis B Surface Antigen)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["HbsAg", "Hepatitis B", "HBsAg"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive"],
+    "explanation_en": "Hepatitis B Surface Antigen detects active Hepatitis B infection. Negative means no infection. Positive means active infection requiring medical evaluation.",
+    "explanation_ur": "ہیپاٹائٹس بی سطحی اینٹیجن فعال ہیپاٹائٹس بی انفیکشن کا پتہ لگاتا ہے۔ منفی کا مطلب کوئی انفیکشن نہیں۔ مثبت کا مطلب فعال انفیکشن ہے جس کے لیے طبی تشخیص کی ضرورت ہے۔"
+  },
+  {
+    "id": "hcv",
+    "test_name": "HCV (Hepatitis C Virus)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["HCV", "Hepatitis C"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive", "Detected"],
+    "explanation_en": "HCV test detects antibodies to Hepatitis C virus. Negative means no infection. Positive indicates exposure to Hepatitis C requiring confirmatory testing.",
+    "explanation_ur": "ایچ سی وی ٹیسٹ ہیپاٹائٹس سی وائرس کے اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب کوئی انفیکشن نہیں۔ مثبت ہیپاٹائٹس سی کے سامنے آنے کی نشاندہی کرتا ہے جس کے لیے تصدیقی ٹیسٹ کی ضرورت ہے۔"
+  },
+  {
+    "id": "hiv",
+    "test_name": "HIV (Human Immunodeficiency Virus)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["HIV", "AIDS","Human Immunodeficiency Virus"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive"],
+    "explanation_en": "HIV test detects antibodies to Human Immunodeficiency Virus. Negative means no HIV infection. Positive means HIV exposure requiring confirmatory testing and medical management.",
+    "explanation_ur": "ایچ آئی وی ٹیسٹ انسانی امیونو وائرس کے اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب کوئی ایچ آئی وی انفیکشن نہیں۔ مثبت ایچ آئی وی کے سامنے آنے کی نشاندہی کرتا ہے جس کے لیے تصدیقی ٹیسٹ اور طبی انتظام کی ضرورت ہے۔"
+  },
+  {
+    "id": "blood_group",
+    "test_name": "Blood Group (ABO & Rh)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "A+, A-, B+, B-, AB+, AB-, O+, O-",
+    "aliases": ["Blood Group", "Blood Type", "ABO"],
+    "is_qualitative": true,
+    "normal_value": "Any",
+    "abnormal_values": [],
+    "explanation_en": "Blood group identifies your ABO type and Rh factor. This is a normal classification, not a disease marker. Knowledge of blood group is important for blood transfusions and pregnancy.",
+    "explanation_ur": "بلڈ گروپ آپ کی ABO قسم اور Rh فیکٹر کی نشاندہی کرتا ہے۔ یہ ایک عام درجہ بندی ہے، بیماری کا نشان نہیں۔ بلڈ گروپ کا علم خون کی منتقلی اور حمل کے لیے اہم ہے۔"
+  },
+  {
+    "id": "rh_factor",
+    "test_name": "RH Factor (Rhesus Factor)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Positive or Negative",
+    "aliases": ["RH", "Rhesus", "Rh Factor"],
+    "is_qualitative": true,
+    "normal_value": "Any",
+    "abnormal_values": [],
+    "explanation_en": "Rh factor is a protein found on red blood cells. Being Rh positive or negative is a normal inherited trait. Important for blood transfusions and pregnancy (Rh incompatibility).",
+    "explanation_ur": "آر ایچ فیکٹر سرخ خون کے خلیوں پر پایا جانے والا ایک پروٹین ہے۔ آر ایچ پازیٹو یا نیگیٹو ہونا ایک عام وراثتی خصوصیت ہے۔ خون کی منتقلی اور حمل (آر ایچ عدم مطابقت) کے لیے اہم ہے۔"
+  },
+  {
+    "id": "rubella",
+    "test_name": "Rubella IgG (German Measles)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative or Positive",
+    "aliases": ["Rubella", "German Measles"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive"],
+    "explanation_en": "Rubella IgG tests immunity to rubella. Positive means you are immune (from vaccination or past infection). Negative means you are not immune and should consider vaccination.",
+    "explanation_ur": "روبیلا آئی جی جی روبیلا کے خلاف قوت مدافعت کی جانچ کرتا ہے۔ مثبت کا مطلب ہے کہ آپ کو قوت مدافعت ہے (ویکسین یا ماضی کے انفیکشن سے)۔ منفی کا مطلب ہے کہ آپ کو قوت مدافعت نہیں ہے اور آپ کو ویکسین لگوانی چاہیے۔"
+  },
+  {
+    "id": "toxoplasmosis",
+    "test_name": "Toxoplasmosis IgG",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["Toxoplasmosis", "Toxo"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive"],
+    "explanation_en": "Toxoplasmosis IgG tests for past or recent infection with Toxoplasma gondii. Positive indicates past exposure. Negative indicates no exposure.",
+    "explanation_ur": "ٹاکسوپلازموسیس آئی جی جی ٹاکسوپلازما گونڈی کے ساتھ ماضی یا حالیہ انفیکشن کی جانچ کرتا ہے۔ مثبت ماضی کی نمائش کی نشاندہی کرتا ہے۔ منفی نمائش نہ ہونے کی نشاندہی کرتا ہے۔"
+  },
+  {
+    "id": "brucella",
+    "test_name": "Brucella (Brucellosis)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["Brucella", "Brucellosis"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive"],
+    "explanation_en": "Brucella test detects antibodies against Brucella bacteria. Negative means no infection. Positive indicates exposure to Brucellosis, which causes fever and joint pain.",
+    "explanation_ur": "بروسیلہ ٹیسٹ بروسیلہ بیکٹیریا کے خلاف اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب ہے کوئی انفیکشن نہیں۔ مثبت بروسیلوسس کے سامنے آنے کی نشاندہی کرتا ہے، جو بخار اور جوڑوں کے درد کا سبب بنتا ہے۔"
+  },
+  {
+    "id": "hpylori",
+    "test_name": "H.Pylori (Helicobacter pylori)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["H.Pylori", "H. pylori", "Helicobacter"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive", "Detected"],
+    "explanation_en": "H. pylori test detects antibodies against Helicobacter pylori. Negative means no infection. Positive indicates exposure to H. pylori, which can cause stomach ulcers and gastritis.",
+    "explanation_ur": "H. pylori ٹیسٹ ہیلی کوبیکٹر پائلوری بیکٹیریا کے خلاف اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب ہے کوئی انفیکشن نہیں۔ مثبت H. pylori کے سامنے آنے کی نشاندہی کرتا ہے، جو پیٹ کے السر اور گیسٹرائٹس کا سبب بن سکتا ہے۔"
+  },
+  {
+    "id": "typidot",
+    "test_name": "Typdot (Typhoid IgM/IgG)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "Negative",
+    "aliases": ["Typdot", "Typhidot", "Typhoid IgM", "Typhoid IgG"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive", "Detected"],
+    "explanation_en": "Typdot test detects IgM/IgG antibodies against Salmonella typhi. Negative means no recent typhoid infection. Positive indicates recent or past typhoid infection.",
+    "explanation_ur": "ٹائپ ڈاٹ ٹیسٹ سالمونیلا ٹائفی کے خلاف IgM/IgG اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب ہے کوئی حالیہ ٹائیفائیڈ انفیکشن نہیں۔ مثبت حالیہ یا ماضی کے ٹائیفائیڈ انفیکشن کی نشاندہی کرتا ہے۔"
+  },
+  {
+    "id": "widal",
+    "test_name": "Widal Test (Typhoid Fever)",
+    "category": "Serology",
+    "unit": "",
+    "reference_range": "< 1:80 (Negative)",
+    "aliases": ["Widal", "Typhoid"],
+    "is_qualitative": true,
+    "normal_value": "Negative",
+    "abnormal_values": ["Positive", "Reactive", "1:160", "1:320", ">1:80"],
+    "explanation_en": "Widal test detects antibodies against Salmonella typhi. Negative means no typhoid infection. Positive indicates recent or past typhoid infection requiring medical treatment.",
+    "explanation_ur": "وائیڈل ٹیسٹ سالمونیلا ٹائفی کے خلاف اینٹی باڈیز کا پتہ لگاتا ہے۔ منفی کا مطلب ہے کوئی ٹائیفائیڈ انفیکشن نہیں۔ مثبت حالیہ یا ماضی کے ٹائیفائیڈ انفیکشن کی نشاندہی کرتا ہے جس کے لیے طبی علاج کی ضرورت ہے۔"
+  }
+
+]

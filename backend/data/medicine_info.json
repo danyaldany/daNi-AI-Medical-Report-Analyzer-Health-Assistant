@@ -1,0 +1,142 @@
+[
+  {
+    "id": "paracetamol",
+    "generic_name": "Paracetamol (Acetaminophen)",
+    "common_brands_pk": ["Panadol", "Calpol", "Napa"],
+    "category": "Pain reliever / fever reducer",
+    "purpose_en": "Commonly used to relieve mild to moderate pain and reduce fever.",
+    "purpose_ur": "عام طور پر ہلکے سے درمیانے درد کو کم کرنے اور بخار اتارنے کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Generally considered safe when used as directed. Exceeding the recommended amount can affect the liver. Follow the dose on the packaging or your doctor's prescription.",
+    "general_notes_ur": "ہدایت کے مطابق استعمال کرنے پر عام طور پر محفوظ سمجھی جاتی ہے۔ تجویز کردہ مقدار سے زیادہ لینا جگر کو متاثر کر سکتا ہے۔ پیکجنگ یا ڈاکٹر کے تجویز کردہ خوراک کی پیروی کریں۔"
+  },
+  {
+    "id": "metformin",
+    "generic_name": "Metformin",
+    "common_brands_pk": ["Glucophage", "Glycomet"],
+    "category": "Diabetes medicine",
+    "purpose_en": "Used to help manage blood sugar levels, most commonly in type 2 diabetes.",
+    "purpose_ur": "خون میں شوگر کی سطح کو منظم رکھنے میں مدد کے لیے استعمال ہوتی ہے، خاص طور پر ٹائپ 2 ذیابیطس میں۔",
+    "general_notes_en": "Usually taken with food to reduce stomach upset. Should be used exactly as prescribed by a doctor; do not adjust the dose yourself.",
+    "general_notes_ur": "عام طور پر معدے کی خرابی کم کرنے کے لیے کھانے کے ساتھ لی جاتی ہے۔ ڈاکٹر کی تجویز کے مطابق ہی استعمال کریں، خود مقدار تبدیل نہ کریں۔"
+  },
+  {
+    "id": "amlodipine",
+    "generic_name": "Amlodipine",
+    "common_brands_pk": ["Norvasc", "Amdocal"],
+    "category": "Blood pressure medicine",
+    "purpose_en": "Used to treat high blood pressure and certain types of chest pain (angina).",
+    "purpose_ur": "ہائی بلڈ پریشر اور بعض اقسام کے سینے کے درد (انجائنا) کے علاج کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "May cause swelling in the ankles/feet in some people. Should not be stopped suddenly without a doctor's advice.",
+    "general_notes_ur": "بعض افراد میں ٹخنوں یا پاؤں میں سوجن ہو سکتی ہے۔ ڈاکٹر کے مشورے کے بغیر اچانک بند نہ کریں۔"
+  },
+  {
+    "id": "atorvastatin",
+    "generic_name": "Atorvastatin",
+    "common_brands_pk": ["Lipitor", "Atorlip"],
+    "category": "Cholesterol-lowering medicine",
+    "purpose_en": "Used to lower cholesterol levels and reduce cardiovascular risk.",
+    "purpose_ur": "کولیسٹرول کی سطح کم کرنے اور دل کی بیماریوں کے خطرے کو کم کرنے کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Usually taken once daily. Report unexplained muscle pain to a doctor, as this is a known but uncommon side effect.",
+    "general_notes_ur": "عام طور پر دن میں ایک بار لی جاتی ہے۔ اگر بغیر وجہ کے پٹھوں میں درد ہو تو ڈاکٹر کو بتائیں، یہ ایک معلوم مگر کم عام سائیڈ ایفیکٹ ہے۔"
+  },
+  {
+    "id": "omeprazole",
+    "generic_name": "Omeprazole",
+    "common_brands_pk": ["Risek", "Ogastro"],
+    "category": "Acid reflux / stomach acid medicine",
+    "purpose_en": "Used to reduce stomach acid, commonly for acid reflux, heartburn, or ulcers.",
+    "purpose_ur": "معدے کے تیزاب کو کم کرنے کے لیے استعمال ہوتی ہے، عام طور پر ایسڈ ریفلکس، سینے کی جلن یا السر کے لیے۔",
+    "general_notes_en": "Often taken before a meal, usually in the morning. Long-term use should be reviewed periodically with a doctor.",
+    "general_notes_ur": "عام طور پر کھانے سے پہلے، اکثر صبح، لی جاتی ہے۔ طویل مدتی استعمال پر وقتاً فوقتاً ڈاکٹر سے مشورہ کرنا چاہیے۔"
+  },
+  {
+    "id": "ibuprofen",
+    "generic_name": "Ibuprofen",
+    "common_brands_pk": ["Brufen"],
+    "category": "Pain reliever / anti-inflammatory",
+    "purpose_en": "Used to relieve pain, reduce inflammation, and lower fever.",
+    "purpose_ur": "درد کم کرنے، سوزش گھٹانے اور بخار اتارنے کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Best taken with food to reduce stomach irritation. People with certain stomach, kidney, or heart conditions should check with a doctor before use.",
+    "general_notes_ur": "معدے کی خرابی کم کرنے کے لیے کھانے کے ساتھ لینا بہتر ہے۔ معدے، گردوں یا دل کے بعض مسائل رکھنے والے افراد استعمال سے پہلے ڈاکٹر سے مشورہ کریں۔"
+  },
+  {
+    "id": "amoxicillin",
+    "generic_name": "Amoxicillin",
+    "common_brands_pk": ["Amoxil"],
+    "category": "Antibiotic",
+    "purpose_en": "Used to treat certain bacterial infections.",
+    "purpose_ur": "بعض بیکٹیریل انفیکشنز کے علاج کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Complete the full course as prescribed, even if symptoms improve early. Not effective against viral infections.",
+    "general_notes_ur": "ڈاکٹر کی تجویز کے مطابق پورا کورس مکمل کریں، چاہے علامات جلد بہتر ہو جائیں۔ یہ وائرل انفیکشنز کے خلاف مؤثر نہیں۔"
+  },
+  {
+    "id": "augmentin",
+    "generic_name": "Amoxicillin/Clavulanic Acid",
+    "common_brands_pk": ["Augmentin"],
+    "category": "Antibiotic",
+    "purpose_en": "A combination antibiotic used for a broader range of bacterial infections than amoxicillin alone.",
+    "purpose_ur": "یہ ایک مشترکہ اینٹی بائیوٹک ہے جو اکیلے اموکسیسیلن کی نسبت بیکٹیریل انفیکشنز کی وسیع تر رینج کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Usually taken with food. Complete the full prescribed course.",
+    "general_notes_ur": "عام طور پر کھانے کے ساتھ لی جاتی ہے۔ تجویز کردہ پورا کورس مکمل کریں۔"
+  },
+  {
+    "id": "losartan",
+    "generic_name": "Losartan",
+    "common_brands_pk": ["Cozaar"],
+    "category": "Blood pressure medicine",
+    "purpose_en": "Used to treat high blood pressure and to help protect the kidneys in some diabetic patients.",
+    "purpose_ur": "ہائی بلڈ پریشر کے علاج کے لیے اور بعض ذیابیطس کے مریضوں میں گردوں کی حفاظت میں مدد کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Should not be stopped suddenly without medical advice.",
+    "general_notes_ur": "طبی مشورے کے بغیر اچانک بند نہ کریں۔"
+  },
+  {
+    "id": "ciprofloxacin",
+    "generic_name": "Ciprofloxacin",
+    "common_brands_pk": ["Ciproxin", "Cipro"],
+    "category": "Antibiotic",
+    "purpose_en": "Used to treat certain bacterial infections, including some urinary tract infections.",
+    "purpose_ur": "بعض بیکٹیریل انفیکشنز کے علاج کے لیے استعمال ہوتی ہے، جن میں کچھ پیشاب کی نالی کے انفیکشنز شامل ہیں۔",
+    "general_notes_en": "Complete the full prescribed course. Some interactions exist with dairy products and certain supplements — follow the prescribing doctor's instructions.",
+    "general_notes_ur": "تجویز کردہ پورا کورس مکمل کریں۔ دودھ کی مصنوعات اور بعض سپلیمنٹس کے ساتھ کچھ تعامل ہو سکتا ہے — تجویز کرنے والے ڈاکٹر کی ہدایات پر عمل کریں۔"
+  },
+  {
+    "id": "aspirin",
+    "generic_name": "Aspirin",
+    "common_brands_pk": ["Disprin"],
+    "category": "Pain reliever / blood thinner (low dose)",
+    "purpose_en": "Used at higher doses for pain and fever, and at low doses (as prescribed) to help prevent blood clots in some heart conditions.",
+    "purpose_ur": "زیادہ مقدار میں درد اور بخار کے لیے، اور کم مقدار میں (بطور تجویز) بعض دل کی حالتوں میں خون کے جمنے کو روکنے میں مدد کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Should generally be avoided in children with viral illness. Long-term/low-dose use should follow a doctor's specific prescription.",
+    "general_notes_ur": "عام طور پر وائرل بیماری میں مبتلا بچوں میں اجتناب کرنا چاہیے۔ طویل مدتی/کم مقدار میں استعمال ڈاکٹر کی مخصوص تجویز کے مطابق ہونا چاہیے۔"
+  },
+  {
+    "id": "levothyroxine",
+    "generic_name": "Levothyroxine",
+    "common_brands_pk": ["Eltroxin", "Thyronorm"],
+    "category": "Thyroid hormone replacement",
+    "purpose_en": "Used to treat an underactive thyroid (hypothyroidism) by replacing thyroid hormone.",
+    "purpose_ur": "کمزور تھائیرائیڈ (ہائپوتھائیرائیڈزم) کے علاج کے لیے تھائیرائیڈ ہارمون کی جگہ لینے کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "Usually taken on an empty stomach, at a consistent time each day. Dose is individualized and adjusted based on periodic blood tests.",
+    "general_notes_ur": "عام طور پر خالی پیٹ، ہر روز ایک ہی وقت پر لی جاتی ہے۔ خوراک ہر فرد کے لیے مختلف ہوتی ہے اور وقتاً فوقتاً خون کے ٹیسٹس کی بنیاد پر ایڈجسٹ کی جاتی ہے۔"
+  },
+  {
+    "id": "cetirizine",
+    "generic_name": "Cetirizine",
+    "common_brands_pk": ["Zyrtec", "Alerid"],
+    "category": "Antihistamine (allergy medicine)",
+    "purpose_en": "Used to relieve allergy symptoms such as sneezing, itching, and runny nose.",
+    "purpose_ur": "الرجی کی علامات جیسے چھینکیں، خارش اور بہتی ناک کو کم کرنے کے لیے استعمال ہوتی ہے۔",
+    "general_notes_en": "May cause mild drowsiness in some people.",
+    "general_notes_ur": "بعض افراد میں ہلکی نیند آور کیفیت پیدا کر سکتی ہے۔"
+  },
+  {
+    "id": "insulin",
+    "generic_name": "Insulin (general)",
+    "common_brands_pk": ["Humulin", "Novomix", "Lantus"],
+    "category": "Diabetes medicine (injectable)",
+    "purpose_en": "Used to manage blood sugar levels, most commonly in type 1 diabetes and in some cases of type 2 diabetes.",
+    "purpose_ur": "خون میں شوگر کی سطح کو منظم رکھنے کے لیے استعمال ہوتی ہے، خاص طور پر ٹائپ 1 ذیابیطس اور بعض اوقات ٹائپ 2 ذیابیطس میں۔",
+    "general_notes_en": "Type and timing vary significantly by product and individual; always follow the exact regimen prescribed by a doctor. Never adjust insulin dosing without medical guidance.",
+    "general_notes_ur": "قسم اور وقت پروڈکٹ اور فرد کے لحاظ سے کافی مختلف ہوتا ہے؛ ہمیشہ ڈاکٹر کے تجویز کردہ عین طریقہ کار پر عمل کریں۔ طبی رہنمائی کے بغیر انسولین کی مقدار کبھی تبدیل نہ کریں۔"
+  }
+]

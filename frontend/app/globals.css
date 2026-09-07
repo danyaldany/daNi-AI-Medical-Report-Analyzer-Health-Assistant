@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Theme (Default) */
+  --background: #f5f6f2;
+  --foreground: #1a1a1a;
+  --card-bg: #ffffff;
+  --border-color: #d8d6ce;
+  --text-muted: #4a5854;
+  --teal: #2f6e62;
+  --teal-hover: #1f4d44;
+  --normal: #4c7a52;
+  --abnormal: #a6432c;
+  --unclear: #a67a2e;
+  
+  /* Category Colors */
+  --hematology: #ef4444;
+  --biochemistry: #3b82f6;
+  --serology: #8b5cf6;
+  --other: #6b7280;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --foreground: #e5e7eb;
+  --card-bg: #1e1e1e;
+  --border-color: #374151;
+  --text-muted: #9ca3af;
+  --teal: #3b8f7a;
+  --teal-hover: #2a6b5a;
+  --normal: #6bcf7a;
+  --abnormal: #e8604a;
+  --unclear: #d4a84a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.font-display {
+  font-family: "Lora", ui-serif, Georgia, serif;
+}
+
+.font-urdu {
+  font-family: "Noto Naskh Arabic", serif;
+  line-height: 2;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .glass {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Status bars */
+.status-bar--normal {
+  border-left: 4px solid var(--normal);
+}
+.status-bar--abnormal {
+  border-left: 4px solid var(--abnormal);
+}
+.status-bar--unclear {
+  border-left: 4px solid var(--unclear);
+}
