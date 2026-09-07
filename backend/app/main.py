@@ -19,20 +19,28 @@ from app.vision_extract import extract_tests_with_vision
 
 app = FastAPI(title="AI Medical Report Analyzer API")
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     # Bug fix: Next.js falls back to another port (3001, 3002...) if 3000 is
+#     # busy, and the previous fixed allow_origins=["http://localhost:3000"]
+#     # silently blocked every other port with a browser-side "Failed to
+#     # fetch" (a CORS preflight rejection, not a backend error). Allowing
+#     # any localhost/127.0.0.1 port covers this for local development.
+#     allow_origin_regex=r"http://(localhost|127\.0\.0\.1):\d+",
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+#     allow_origins=[
+#         "https://sehatsamjomedical.vercel.app",  # ← Apni Vercel URL daalein
+#         "http://localhost:3000"
+#     ],
+# )
+
 app.add_middleware(
     CORSMiddleware,
-    # Bug fix: Next.js falls back to another port (3001, 3002...) if 3000 is
-    # busy, and the previous fixed allow_origins=["http://localhost:3000"]
-    # silently blocked every other port with a browser-side "Failed to
-    # fetch" (a CORS preflight rejection, not a backend error). Allowing
-    # any localhost/127.0.0.1 port covers this for local development.
-    allow_origin_regex=r"http://(localhost|127\.0\.0\.1):\d+",
+    allow_origins=["*"],
+    allow_credentials=False,   # ← Must be False with wildcard
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_origins=[
-        "https://sehatsamjomedical.vercel.app",  # ← Apni Vercel URL daalein
-        "http://localhost:3000"
-    ],
 )
 
 
