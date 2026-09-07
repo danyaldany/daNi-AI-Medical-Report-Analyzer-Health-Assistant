@@ -323,10 +323,8 @@ This project is licensed under the **MIT License** – free to use, modify, and 
 ## 📬 Contact & Team
 
 **Team Member:**  
-- [Your Name] – Full Stack Developer (AI Integration, Backend, Frontend)  
-- GitHub: [github.com/your-username](https://github.com/your-username)  
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-- Email: your-email@example.com
+- Danyal Arshad – Full Stack AI/ML Engineer (AI Integration, Backend, Frontend)  
+- GitHub: [github.com/danyaldany](https://github.com/danyaldany)  
 
 ---
 
