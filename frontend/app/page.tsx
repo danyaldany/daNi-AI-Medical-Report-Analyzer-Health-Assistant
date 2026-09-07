@@ -54,7 +54,8 @@ type MedicineResult = {
   general_notes_ur?: string;
 };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+// const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API_BASE = "https://astonishing-smile-production.up.railway.app";
 
 // ========== PANEL CONFIG ==========
 const PANEL_MAP: Record<string, string> = {
